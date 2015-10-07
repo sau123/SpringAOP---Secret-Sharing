@@ -54,7 +54,7 @@ public class LogicAspect {
 		else{
 			Secret secret = map.get(secretID);
 			if(!secret.getOwners().contains(userID))
-				throw new UnauthorizedException(userID+" can't read the secret with ID "+secret.getUuid()); 
+				throw new UnauthorizedException(userID+" can't read the secret with ID "+secret.getUuid());
 		}
 	}
 
